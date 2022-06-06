@@ -1,0 +1,50 @@
+@-webkit-keyframes moveGrad {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes moveGrad {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  body {
+    -webkit-animation: moveGrad 8s infinite;
+            animation: moveGrad 8s infinite;
+    background-size: 400% 400%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1,
+  h3 {
+    color: white;
+    font-size: 4rem;
+    letter-spacing: 1vw;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  
+  h3 {
+    font-size: 2rem;
+    margin-top: 1em;
+  }
